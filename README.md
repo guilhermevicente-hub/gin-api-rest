@@ -37,7 +37,7 @@ services:
       POSTGRES_DB: seu_banco_de_dados
     ports:
       - "5432:5432"
-
+````
 Inicie o contêiner com o seguinte comando:
 ```bash
    docker-compose up -d
@@ -66,4 +66,44 @@ Para instalar as dependências do projeto, incluindo o Gin, execute o seguinte c
 
 Para executar a aplicação, siga estas etapas:
 
-1 - Instale as dependências do projeto:
+- Instale as dependências do projeto:
+
+```bash
+   go mod tidy
+```
+
+- Compile o código:
+
+```bash
+   go build -o nome_do_executável
+```
+
+- Execute a aplicação:
+
+```bash
+   ./nome_do_executável
+```
+
+A aplicação estará disponível em http://localhost:8080.
+
+
+## Capítulo 01 - Instalando e crando a primeira rota com Gin
+
+- Iniciamos o projeto do zero, criando uma pasta e instalando os módulos necessários para criar uma API com Gin;
+- Instalamos o gin em nosso projeto com o comando:
+```bash
+  go get -u github.com/gin-gonic/gin
+```
+- Criamos um endpoint, que recebe uma requisição GET, retornando um Json exibindo recursos de um aluno.
+
+## Capítulo 02 - Modularizando o código, modelos e banco de dados
+
+- 
+- 
+- 
+
+## Contribuição
+Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+Este projeto está licenciado sob a Licença MIT.

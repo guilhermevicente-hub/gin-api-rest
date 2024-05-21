@@ -1,18 +1,14 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"github.com/guilhermevicente-hub/api-go-gin/models"
+	"github.com/guilhermevicente-hub/api-go-gin/routes"
 )
 
-func ExibeAlunos(c *gin.Context)  {
-	c.JSON(200, gin.H{
-		"id":"1",
-		"nome":"Guilherme Vicente", 
-	})
-}
-
-func main(){
-	r := gin.Default()
-	r.GET("/alunos", ExibeAlunos)
-	r.Run()
+func main() {
+	models.Alunos = []models.Aluno{
+		{Nome: "Guilherme Vicente", CPF: "000000000", RG: "4700000000"},
+		{Nome: "Ariel Facciolli", CPF: "111111111", RG: "4800000000"},
+	}
+	routes.HandleRequests()
 }

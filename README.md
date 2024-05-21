@@ -98,9 +98,16 @@ A aplicação estará disponível em http://localhost:8080.
 
 ## Capítulo 02 - Modularizando o código, modelos e banco de dados
 
-- 
-- 
-- 
+- Modularizamos nosso código criando pacotes de controles e rotas, tornando nosso código mais fácil de manter e editar;
+- Aprendemos como pegar informações passadas por parâmetros e retornar uma mensagem personalizada;
+- Criamos a struct de aluno, que vamos disponibilizar como recurso da nossa API.
+
+## Capítulo 03 - Struct, banco de dados e ORM
+
+-
+-
+-
+
 
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.

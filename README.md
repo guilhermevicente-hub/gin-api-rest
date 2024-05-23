@@ -108,6 +108,11 @@ A aplicação estará disponível em http://localhost:8080.
 - Conectamos a API com banco de dados e realizamos uma migração com base na struct de aluno;
 - Alteramos o controle para exibir os alunos registrados no banco de dados!
 
+## Capítulo 04 - Implementando rotas HTTP
+
+- Alteramos o controller para exibir alunos do banco de dados;
+- Criamos um endpoint para exibir alunos por ID;
+- Alteramos o comportamento da API para exibir uma mensagem quando o ID do aluno não for encontrado;
 
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.

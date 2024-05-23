@@ -104,9 +104,9 @@ A aplicação estará disponível em http://localhost:8080.
 
 ## Capítulo 03 - Struct, banco de dados e ORM
 
--
--
--
+- Instalamos o Gorm para não escrever código sql, facilitando a comunicação da aplicação com o banco de dados;
+- Conectamos a API com banco de dados e realizamos uma migração com base na struct de aluno;
+- Alteramos o controle para exibir os alunos registrados no banco de dados!
 
 
 ## Contribuição

@@ -114,6 +114,12 @@ A aplicação estará disponível em http://localhost:8080.
 - Criamos um endpoint para exibir alunos por ID;
 - Alteramos o comportamento da API para exibir uma mensagem quando o ID do aluno não for encontrado;
 
+## Capítulo 05 - Deletando, editando e buscando alunos
+
+- Adicionamos um endpoint com método Delete para deletar um aluno e removê-lo do banco de dados;
+- Adicionamos um endpoint com método Patch para atualizar o cadastro de um aluno;
+- Criamos um endpoint para buscar alunos pelo número do CPF;
+
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 

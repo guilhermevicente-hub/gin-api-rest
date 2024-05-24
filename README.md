@@ -178,6 +178,11 @@ Criamos nosso primeiro teste em Go, o TestFalhador;
 - Escrevemos um teste que verifica o endpoint de Saudação da API;
 - Instalando o assert e alteramos o código verificando o corpo da resposta.
 
+## Capítulo 03 - Testando os endpoints
+
+- Criamos um teste que garanta o comportamento da listagem de alunos;
+- Geramos um aluno mock para ser usado em nossos testes;
+- Realizamos o teste do enpoint que busca um aluno por CPF.
 
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.

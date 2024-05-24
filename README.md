@@ -171,6 +171,14 @@ Inicie o contêiner com o seguinte comando:
 - Criamos nossas validações na struct de Aluno, garantindo que um campo não fique em branco e tenha uma quantidade específica de caracteres;
 - Aplicamos essa validação no controller no momento que criamos ou editamos um aluno.
 
+## Capítulo 02 - Testes
+
+- Realizamos um teste no Postman que verifica o statusCode de uma resposta;
+Criamos nosso primeiro teste em Go, o TestFalhador;
+- Escrevemos um teste que verifica o endpoint de Saudação da API;
+- Instalando o assert e alteramos o código verificando o corpo da resposta.
+
+
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 

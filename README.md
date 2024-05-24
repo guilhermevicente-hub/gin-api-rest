@@ -120,6 +120,57 @@ A aplicação estará disponível em http://localhost:8080.
 - Adicionamos um endpoint com método Patch para atualizar o cadastro de um aluno;
 - Criamos um endpoint para buscar alunos pelo número do CPF;
 
+
+--------------
+
+# Go: Validações, testes e páginas HTML
+
+## Tecnologias Utilizadas
+
+- [Go](https://golang.org/) (versão 1.16 ou superior)
+- [Gin](https://gin-gonic.com/) - Framework web em Go
+- [Gorm](https://gorm.io/) - ORM para Go
+- [Docker](https://www.docker.com/) - Plataforma de contêineres
+- [PostgreSQL](https://www.postgresql.org/) - Sistema de gerenciamento de banco de dados relacional
+
+## Pré-requisitos
+
+Antes de executar esta aplicação, certifique-se de ter o seguinte instalado em sua máquina:
+
+- Go
+- Docker
+- Docker Compose
+
+## Configuração do Banco de Dados
+
+A aplicação utiliza o PostgreSQL rodando em um contêiner Docker. Você pode configurar o banco de dados utilizando o Docker Compose.
+
+### Docker Compose
+
+Crie um arquivo `docker-compose.yml` na raiz do projeto com o seguinte conteúdo:
+
+```yaml
+version: '3.8'
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: seu_usuario
+      POSTGRES_PASSWORD: sua_senha
+      POSTGRES_DB: seu_banco_de_dados
+    ports:
+      - "5432:5432"
+````
+Inicie o contêiner com o seguinte comando:
+```bash
+   docker-compose up -d
+```
+## Capítulo 01 - Instalando e criando a primeira rota com Gin
+
+- Carregamos o projeto base e criamos a imagem do banco de dados no Docker;
+- Criamos nossas validações na struct de Aluno, garantindo que um campo não fique em branco e tenha uma quantidade específica de caracteres;
+- Aplicamos essa validação no controller no momento que criamos ou editamos um aluno.
+
 ## Contribuição
 Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
